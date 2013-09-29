@@ -1,0 +1,27 @@
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\bin\Release\AlexaModule.exe
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\bin\Release\AlexaModule.pdb
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.Form1.resources
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.Properties.Resources.resources
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\ResGen.read.1.tlog
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\ResGen.write.1.tlog
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.exe
+C:\work\progetti visual studio 2010\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\bin\Release\AlexaModule.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\bin\Release\AlexaModule.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.Form1.resources
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.Properties.Resources.resources
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\ResGen.read.1.tlog
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\ResGen.write.1.tlog
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\bin\Release\AlexaModule.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\bin\Release\AlexaModule.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.Form1.resources
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.Properties.Resources.resources
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\ResGen.read.1.tlog
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\ResGen.write.1.tlog
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaModule\AlexaModule\obj\x86\Release\AlexaModule.pdb

@@ -1,0 +1,1 @@
+reg.exe ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Adamo2\python.exe" /t REG_SZ /d "WIN7RTM" /f

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaCloseWindow", "AlexaCloseWindow\AlexaCloseWindow\AlexaCloseWindow.csproj", "{07E3223A-81A5-413D-AD09-0B4534487E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaKillProcesses", "AlexaKillProcesses\AlexaKillProcesses\AlexaKillProcesses.csproj", "{CCE515EF-E996-40D8-8419-98874AF8A922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaRestoreWindow", "AlexaRestoreWindow\AlexaRestoreWindow\AlexaRestoreWindow.csproj", "{150F90E6-2F58-4BCC-9C72-38A67D1FA2C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaSetForeground", "AlexaSetForeground\AlexaSetForeground\AlexaSetForeground.csproj", "{FAFAF6D2-1FE1-4CB1-9BF6-30339C979F09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALEXA-IDE", "ALEXA-IDE\ALEXA-IDE\ALEXA-IDE.csproj", "{25BECE1F-0BB1-46C5-A1DE-6408EA968687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaModule", "AlexaModule\AlexaModule\AlexaModule.csproj", "{BE87EA2E-7DAC-4692-AEA8-1176DCA8BB1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaSendMail", "AlexaSendMail\AlexaSendMail\AlexaSendMail.csproj", "{A6481DA9-270A-4ED6-A911-700CD5E96042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07E3223A-81A5-413D-AD09-0B4534487E9F}.Debug|x86.ActiveCfg = Debug|x86
+		{07E3223A-81A5-413D-AD09-0B4534487E9F}.Debug|x86.Build.0 = Debug|x86
+		{07E3223A-81A5-413D-AD09-0B4534487E9F}.Release|x86.ActiveCfg = Release|x86
+		{07E3223A-81A5-413D-AD09-0B4534487E9F}.Release|x86.Build.0 = Release|x86
+		{CCE515EF-E996-40D8-8419-98874AF8A922}.Debug|x86.ActiveCfg = Debug|x86
+		{CCE515EF-E996-40D8-8419-98874AF8A922}.Debug|x86.Build.0 = Debug|x86
+		{CCE515EF-E996-40D8-8419-98874AF8A922}.Release|x86.ActiveCfg = Release|x86
+		{CCE515EF-E996-40D8-8419-98874AF8A922}.Release|x86.Build.0 = Release|x86
+		{150F90E6-2F58-4BCC-9C72-38A67D1FA2C6}.Debug|x86.ActiveCfg = Debug|x86
+		{150F90E6-2F58-4BCC-9C72-38A67D1FA2C6}.Debug|x86.Build.0 = Debug|x86
+		{150F90E6-2F58-4BCC-9C72-38A67D1FA2C6}.Release|x86.ActiveCfg = Release|x86
+		{150F90E6-2F58-4BCC-9C72-38A67D1FA2C6}.Release|x86.Build.0 = Release|x86
+		{FAFAF6D2-1FE1-4CB1-9BF6-30339C979F09}.Debug|x86.ActiveCfg = Debug|x86
+		{FAFAF6D2-1FE1-4CB1-9BF6-30339C979F09}.Debug|x86.Build.0 = Debug|x86
+		{FAFAF6D2-1FE1-4CB1-9BF6-30339C979F09}.Release|x86.ActiveCfg = Release|x86
+		{FAFAF6D2-1FE1-4CB1-9BF6-30339C979F09}.Release|x86.Build.0 = Release|x86
+		{25BECE1F-0BB1-46C5-A1DE-6408EA968687}.Debug|x86.ActiveCfg = Debug|x86
+		{25BECE1F-0BB1-46C5-A1DE-6408EA968687}.Debug|x86.Build.0 = Debug|x86
+		{25BECE1F-0BB1-46C5-A1DE-6408EA968687}.Release|x86.ActiveCfg = Release|x86
+		{25BECE1F-0BB1-46C5-A1DE-6408EA968687}.Release|x86.Build.0 = Release|x86
+		{BE87EA2E-7DAC-4692-AEA8-1176DCA8BB1E}.Debug|x86.ActiveCfg = Debug|x86
+		{BE87EA2E-7DAC-4692-AEA8-1176DCA8BB1E}.Debug|x86.Build.0 = Debug|x86
+		{BE87EA2E-7DAC-4692-AEA8-1176DCA8BB1E}.Release|x86.ActiveCfg = Release|x86
+		{BE87EA2E-7DAC-4692-AEA8-1176DCA8BB1E}.Release|x86.Build.0 = Release|x86
+		{A6481DA9-270A-4ED6-A911-700CD5E96042}.Debug|x86.ActiveCfg = Debug|x86
+		{A6481DA9-270A-4ED6-A911-700CD5E96042}.Debug|x86.Build.0 = Debug|x86
+		{A6481DA9-270A-4ED6-A911-700CD5E96042}.Release|x86.ActiveCfg = Release|x86
+		{A6481DA9-270A-4ED6-A911-700CD5E96042}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

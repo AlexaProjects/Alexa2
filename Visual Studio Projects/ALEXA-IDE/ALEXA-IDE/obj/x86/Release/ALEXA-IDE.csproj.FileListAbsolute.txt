@@ -1,0 +1,27 @@
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\bin\Release\ALEXA-IDE.exe
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\bin\Release\ALEXA-IDE.pdb
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA_IDE.Form1.resources
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA_IDE.Properties.Resources.resources
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResGen.read.1.tlog
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResGen.write.1.tlog
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA-IDE.exe
+C:\work\progetti visual studio 2010\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA-IDE.pdb
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\bin\Release\ALEXA-IDE.exe
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\bin\Release\ALEXA-IDE.pdb
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA_IDE.Form1.resources
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA_IDE.Properties.Resources.resources
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResGen.read.1.tlog
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResGen.write.1.tlog
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA-IDE.exe
+C:\work\progetti visual studio 2010\Alexa\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA-IDE.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\bin\Release\ALEXA-IDE.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\bin\Release\ALEXA-IDE.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA_IDE.Form1.resources
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA_IDE.Properties.Resources.resources
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResGen.read.1.tlog
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ResGen.write.1.tlog
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA-IDE.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\ALEXA-IDE\ALEXA-IDE\obj\x86\Release\ALEXA-IDE.pdb

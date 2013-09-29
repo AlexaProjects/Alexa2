@@ -1,0 +1,19 @@
+C:\work\progetti visual studio 2010\AlexaCloseWindow\AlexaCloseWindow\bin\Debug\AlexaCloseWindow.exe
+C:\work\progetti visual studio 2010\AlexaCloseWindow\AlexaCloseWindow\bin\Debug\AlexaCloseWindow.pdb
+C:\work\progetti visual studio 2010\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\AlexaCloseWindow.exe
+C:\work\progetti visual studio 2010\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\AlexaCloseWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\AlexaCloseWindow.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\AlexaCloseWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaCloseWindow\AlexaCloseWindow\bin\Debug\AlexaCloseWindow.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaCloseWindow\AlexaCloseWindow\bin\Debug\AlexaCloseWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\bin\Debug\AlexaCloseWindow.exe
+C:\work\progetti visual studio 2010\bin\Debug\AlexaCloseWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\bin\Debug\AlexaCloseWindow.exe
+C:\work\progetti visual studio 2010\Alexa\bin\Debug\AlexaCloseWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\AlexaCloseWindow.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\AlexaCloseWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\bin\Debug\AlexaCloseWindow.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\bin\Debug\AlexaCloseWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaCloseWindow\AlexaCloseWindow\obj\x86\Debug\ResolveAssemblyReference.cache
