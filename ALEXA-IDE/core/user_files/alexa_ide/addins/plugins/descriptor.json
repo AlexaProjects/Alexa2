@@ -1,0 +1,11 @@
+[
+  {
+    "plugin-descriptor": "pluginProject.plugin", 
+    "name": "pluginProject", 
+    "version": "0.3", 
+    "authors": "malderete", 
+    "download": "http://ninja-ide.org/media/plugin_files/pluginProject_1.zip", 
+    "home": "/plugins/10/", 
+    "description": "This NINJA-IDE Plugin allows to create Plugins for NINJA... Wow Recursive!"
+  }
+]

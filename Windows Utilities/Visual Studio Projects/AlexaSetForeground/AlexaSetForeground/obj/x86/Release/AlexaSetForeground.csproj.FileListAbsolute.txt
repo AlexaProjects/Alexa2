@@ -1,0 +1,22 @@
+C:\work\progetti visual studio 2010\AlexaSetForeground\AlexaSetForeground\bin\Release\AlexaSetForeground.exe
+C:\work\progetti visual studio 2010\AlexaSetForeground\AlexaSetForeground\bin\Release\AlexaSetForeground.pdb
+C:\work\progetti visual studio 2010\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.exe
+C:\work\progetti visual studio 2010\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaSetForeground\AlexaSetForeground\bin\Release\AlexaSetForeground.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaSetForeground\AlexaSetForeground\bin\Release\AlexaSetForeground.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\Alexa\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.pdb
+C:\work\progetti visual studio 2010\Alexa\bin\Release\AlexaSetForeground.exe
+C:\work\progetti visual studio 2010\Alexa\bin\Release\AlexaSetForeground.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\bin\Release\AlexaSetForeground.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\bin\Release\AlexaSetForeground.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\bin\Release\AlexaSetForeground.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\bin\Release\AlexaSetForeground.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\ResolveAssemblyReference.cache
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\AlexaSetForeground\AlexaSetForeground\obj\x86\Release\AlexaSetForeground.pdb

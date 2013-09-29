@@ -1,0 +1,22 @@
+C:\work\progetti visual studio 2010\AlexaRestoreWindow\AlexaRestoreWindow\bin\Debug\AlexaRestoreWindow.exe
+C:\work\progetti visual studio 2010\AlexaRestoreWindow\AlexaRestoreWindow\bin\Debug\AlexaRestoreWindow.pdb
+C:\work\progetti visual studio 2010\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.exe
+C:\work\progetti visual studio 2010\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaRestoreWindow\AlexaRestoreWindow\bin\Debug\AlexaRestoreWindow.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaRestoreWindow\AlexaRestoreWindow\bin\Debug\AlexaRestoreWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\work\progetti visual studio 2010\Alexa\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.exe
+C:\work\progetti visual studio 2010\Alexa\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.pdb
+C:\work\progetti visual studio 2010\Alexa\bin\Debug\AlexaRestoreWindow.exe
+C:\work\progetti visual studio 2010\Alexa\bin\Debug\AlexaRestoreWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\bin\Debug\AlexaRestoreWindow.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\bin\Debug\AlexaRestoreWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Visual Studio Projects\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\bin\Debug\AlexaRestoreWindow.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\bin\Debug\AlexaRestoreWindow.pdb
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.exe
+C:\work\GitHubRepos\Alexa2\Alexa2\Windows Utilities\Visual Studio Projects\AlexaRestoreWindow\AlexaRestoreWindow\obj\x86\Debug\AlexaRestoreWindow.pdb
