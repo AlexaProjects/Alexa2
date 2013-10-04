@@ -13,6 +13,7 @@
 ; You should have received a copy of the GNU General Public License
 ; along with Al'exa.  If not, see <http://www.gnu.org/licenses/>.
 
+TraySetState(2)
 
 $delay = 5
 $text = ""
