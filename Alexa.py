@@ -45,6 +45,7 @@ if sys.platform == 'win32':
 	import win32gui
 	import win32api, win32con, win32com
 	import win32com.client as comclt
+	from ctypes import *
 
 	
 class Log:
@@ -57,6 +58,7 @@ class Log:
 	ErrorImagePath = ""
 	LogFileName = ""
 	Path = ""
+	LastTimedOutStep = ""
 	IsInError = False
 	ErrorMotivation = ""
 	ExitOnError = False
@@ -168,7 +170,7 @@ class Log:
 		if Log.Enable is True:
 		
 			try:
-
+				#unicode(message,"UTF-8")
 				if level.lower() == "debug" and Log.Level.lower() == "debug":
 					
 					Log.CheckFolder()
@@ -192,8 +194,8 @@ class Log:
 					with open(Log.LogFileName, "a") as text_file:
 						text_file.write(time.strftime("%d/%b/%Y %H:%M:%S", time.localtime()) +
 						"  ERROR MESSAGE:  " + message + os.linesep)	
-			except:
-				pass
+			except Exception, err:
+				print "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno)
 
 
 class Mail:
@@ -395,51 +397,63 @@ class Ocr:
 		root = ET.fromstring(text)
 		
 		for span in root.iter('span'):
-			#print span.attrib,span.text
-			#print span.get('title')
-			
-			
-			title = span.get('title')
-			title = title.replace(';','')
-			coordinates = title.split(' ')
-			
-			if span.get('class') == 'ocr_line':
-				line = span.get('id')
-				line = line.replace('line_','')
-				lineNr = line
-			
-			if 	not span.find('strong') ==  None:
-				span.text = span.find('strong').text
-			
-			if not span.find('em') ==  None:
-				span.text = span.find('em').text
-			
-			if not span.find('strong/em') ==  None:
-				span.text = span.find('strong/em').text
+			try:
+				#print span.attrib,span.text
+				#print span.get('title')
 				
-			if span.text == None:
-				continue
+				
+				title = span.get('title')
+				title = title.replace(';','')
+				coordinates = title.split(' ')
+				
+				if span.get('class') == 'ocr_line':
+					line = span.get('id')
+					line = line.replace('line_','')
+					lineNr = line
+				
+				if 	not span.find('strong') ==  None:
+					span.text = span.find('strong').text
+				
+				if not span.find('em') ==  None:
+					span.text = span.find('em').text
+				
+				if not span.find('strong/em') ==  None:
+					span.text = span.find('strong/em').text
+					
+				if span.text == None:
+					continue
+				
+				phrase = phrase + " " + span.text
+				
+				result = re.match(".*" + unicode(textToCompare,"UTF-8") + ".*", phrase, re.DOTALL | re.IGNORECASE)
+				
+				#print span.text," >> line:",lineNr,"coordinates:",int(coordinates[1])/3,int(coordinates[2])/3,int(coordinates[3])/3,int(coordinates[4])/3
+				#print "text found:",phrase
 			
-			phrase = phrase + " " + span.text
-			
-			result = re.match(".*" + textToCompare + ".*", phrase, re.DOTALL | re.IGNORECASE)
-			
-			#print span.text," >> line:",lineNr,"coordinates:",int(coordinates[1])/3,int(coordinates[2])/3,int(coordinates[3])/3,int(coordinates[4])/3
-			#print "text found:",phrase
-		
-			#print "tempo ocr", time.time() - timex
-			
-			if result != None:
-				print "text from Ocr engine:",phrase			
-				print "ocr time:",time.time() - timex,"sec."
-				# write debug message
-				Log.WriteMessage("debug", "text from Ocr engine: " + phrase)
-				return int(coordinates[1]),int(coordinates[2]),int(coordinates[3]),int(coordinates[4])
+				#print "tempo ocr", time.time() - timex
+				if result != None:
 
-		print "text from Ocr engine:",phrase
-		print "ocr time:",time.time() - timex,"sec."
+					try:
+						print "text from Ocr engine:",phrase			
+						print "ocr time:",time.time() - timex,"sec."
+					except:
+						pass
+					
+					# write debug message
+					Log.WriteMessage("debug", "text from Ocr engine: " + phrase)
 
+					return int(coordinates[1]),int(coordinates[2]),int(coordinates[3]),int(coordinates[4])
+					
+			except Exception, err:
+				Log.IsInError = True
+				Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))
 		
+		try:
+			print "text from Ocr engine:",phrase
+			print "ocr time:",time.time() - timex,"sec."
+		except:
+			pass
+			
 		# write debug message
 		Log.WriteMessage("debug", "text from Ocr engine: " + phrase)
 		
@@ -751,7 +765,49 @@ class Process:
 		except Exception, err:
 			Log.IsInError = True
 			Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))
+	
+	@staticmethod
+	def AlexaAlreadyRunning():
+		try:
+		
+			alexaRunningProcesses = 0
+				
+			if sys.platform == 'win32':
+				procname = "python.exe"
 
+				WMI = comclt.GetObject('winmgmts:')
+				processes = WMI.InstancesOf('Win32_Process')
+				process_list = [(p.Properties_("ProcessID").Value, p.Properties_("Name").Value, p.Properties_("CommandLine").Value) for p in processes
+				if p.Properties_("Name").Value.lower() == procname]
+
+
+				for proc in process_list:
+
+					argument = proc[2]
+					
+					if "-u" in argument:
+						filename = argument[argument.find("-u" ) + 2:]
+					else:
+						filename = argument[argument.find(".exe") + 4:]
+					
+					filename = filename.lstrip(' ')
+					
+					print "File Name:",filename
+					
+					input = open(filename,'r')
+					
+					for line in input.readlines():
+					
+						if "import" in line.lower() and "alexa" in line.lower():
+							alexaRunningProcesses = alexaRunningProcesses + 1
+							break
+			if alexaRunningProcesses >= 2:
+				return True
+			else:
+				return False
+		except Exception, err:
+			Log.IsInError = True
+			Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))
 
 class Screen:
 
@@ -949,6 +1005,7 @@ class AppObject:
 						Log.WriteErrorImage(datetime.now().strftime("%H_%M_%S") + "_LookingFor_" + self.Name + ".png", PilImage)
 					Log.IsInError = True
 					self.TimeOut = True
+					Log.LastTimedOutStep = self.Name
 					duration = time.time() - t0
 					NagiosUtils.TimedOutSteps.append((self.Name, duration, timeout))
 					return duration
@@ -1250,6 +1307,14 @@ class AppObject:
 				Log.IsInError = True
 				Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))	
 				
+				if(time.time() - t0 > timeout):
+					Log.IsInError = True
+					self.TimeOut = True
+					Log.LastTimedOutStep = self.Name
+					duration = time.time() - t0
+					NagiosUtils.TimedOutSteps.append((self.Name, duration, timeout))
+					return duration
+				
 			cntLoop = cntLoop + 1
 		
 	def medianCanny(self,img, thresh1, thresh2):
@@ -1340,7 +1405,8 @@ class AppImage:
 					else:
 						Log.WriteErrorImage(datetime.now().strftime("%H_%M_%S") + "_LookingFor_" + self.Name + ".png", PilImage)
 					Log.IsInError = True
-					self.TimeOut = True					
+					self.TimeOut = True
+					Log.LastTimedOutStep = self.Name					
 					duration = time.time() - t0
 					NagiosUtils.TimedOutSteps.append((self.Name, duration, timeout))
 					return duration
@@ -1412,6 +1478,14 @@ class AppImage:
 				#print sys.exc_traceback.tb_lineno
 				Log.IsInError = True
 				Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))
+				
+				if(time.time() - t0 > timeout):
+					Log.IsInError = True
+					self.TimeOut = True		
+					Log.LastTimedOutStep = self.Name					
+					duration = time.time() - t0
+					NagiosUtils.TimedOutSteps.append((self.Name, duration, timeout))
+					return duration
 			cntLoop = cntLoop + 1
 
 class AppText:
@@ -1499,7 +1573,10 @@ class AppText:
 				
 				tstep = time.time()
 				
-				print "wait for text \"" + self.Text + "\", time elapsed: " + str(time.time() - t0)
+				try:
+					print "wait for text \"" + self.Text + "\", time elapsed: " + str(time.time() - t0)
+				except:
+					pass
 					
 				#PilImage = self.GrabScreen()
 				if SearchRegion.x != None and SearchRegion.y != None:
@@ -1529,9 +1606,10 @@ class AppText:
 						Log.WriteErrorImage(datetime.now().strftime("%H_%M_%S") + "_LookingFor_AppText_Num_" + str(AppText.Number) + ".png", PilImage)
 					else:
 						Log.WriteErrorImage(datetime.now().strftime("%H_%M_%S") + "_LookingFor_" + self.Name + ".png", PilImage)
-					
+					Log.LastTimedOutStep = self.Name
 					Log.IsInError = True	
-					self.TimeOut = True				
+					self.TimeOut = True			
+					Log.LastTimedOutStep = self.Name					
 					duration = time.time() - t0
 					NagiosUtils.TimedOutSteps.append((self.Name, duration, timeout))
 					return duration
@@ -1794,6 +1872,14 @@ class AppText:
 				#print sys.exc_traceback.tb_lineno
 				Log.IsInError = True
 				Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))
+				
+				if(time.time() - t0 > timeout):
+					Log.IsInError = True	
+					self.TimeOut = True	
+					Log.LastTimedOutStep = self.Name					
+					duration = time.time() - t0
+					NagiosUtils.TimedOutSteps.append((self.Name, duration, timeout))
+					return duration
 			cntLoop = cntLoop + 1
 
 	# find the object and save the coordinates
@@ -2008,6 +2094,25 @@ class Mouse:
 			Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))		
 			
 	@staticmethod
+	def Move2(x, y, button = "left"):
+		try:
+			Log.IsInError = False
+			if sys.platform == 'win32':
+				point = _point_t()
+				result = windll.user32.GetCursorPos(pointer(point))
+				print (point.x, point.y)
+				
+				'''
+				for currX in range(point.x, x):
+					#for currX in range(point.x, x):
+					#time.sleep(.001)
+					windll.user32.SetCursorPos(currX, y)
+				'''
+		except Exception, err:
+			Log.IsInError = True
+			Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))	
+			
+	@staticmethod
 	def Drag(startX, startY, endX, endY):
 		try:
 			Log.IsInError = False
@@ -2046,7 +2151,15 @@ class Mouse:
 		except Exception, err:
 			Log.IsInError = True
 			Log.WriteMessage("ERROR", "an exception has occurred: " + str(err) + " on line " + str(sys.exc_traceback.tb_lineno))	
-		
+
+			
+class _point_t(Structure):
+    _fields_ = [
+                ('x',  c_long),
+                ('y',  c_long),
+               ]
+
+			   
 class Keyboard:
 
 	init = False

@@ -501,7 +501,7 @@ class AppTextDialog(QWidget):
         self.ComboBoxObjBinarizeImageEvent()
 
     def LineEditObjLabelTextEvent(self):
-        self.caller.AlexaAppObjects[self.objectIndex].Text = self.textEdit.toPlainText()
+        self.caller.AlexaAppObjects[self.objectIndex].Text = self.textEdit.toPlainText().encode('utf-8')
 
     def ComboBoxObjBinarizeLabelEvent(self):
         if self.comboBoxObjBinarizeLabel.currentText() == "Yes":
@@ -1214,7 +1214,7 @@ class AppTextInRegionDialog(QWidget):
         self.caller.AlexaAppObjects[self.objectIndex].AppText.Description = self.textEditObjDescription.toPlainText()
 
     def TextEditObjTextValueEvent(self):
-        self.caller.AlexaAppObjects[self.objectIndex].AppText.Text = self.textEdit.toPlainText()
+        self.caller.AlexaAppObjects[self.objectIndex].AppText.Text = self.textEdit.toPlainText().encode('utf-8')
 
     def ComboBoxObjBinarizeLabelEvent(self):
         if self.comboBoxObjBinarizeLabel.currentText() == "Yes":
@@ -1422,6 +1422,13 @@ class AppTextInRegionDialog(QWidget):
         self.ResetPressed = False
 
     def PushButtonTestEvent(self):
+
+        #Log.DisableConsoleOutput()
+        #Log.Enable = True
+        #Log.DebugImages = True
+        #Log.Level = "debug"
+        #Log.Path = "C:\\Alexa\\TestCases\\NetEye_Blog\\Log\\alan"
+
         self.caller.AlexaAppObjects[self.objectIndex].AppText.x = None
         self.caller.AlexaAppObjects[self.objectIndex].AppText.y = None
         self.caller.AlexaAppObjects[self.objectIndex].AppText.Width = 0

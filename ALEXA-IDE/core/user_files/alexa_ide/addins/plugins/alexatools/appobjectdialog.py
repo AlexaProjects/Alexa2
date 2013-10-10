@@ -775,7 +775,7 @@ class AppObjDialog(QWidget):
         self.ComboBoxObjBinarizeImageEvent()
 
     def LineEditObjLabelTextEvent(self):
-        self.caller.AlexaAppObjects[self.objectIndex].Label.Text = self.lineEditObjLabelText.text()
+        self.caller.AlexaAppObjects[self.objectIndex].Label.Text = self.lineEditObjLabelText.text().encode('utf-8')
 
     def ComboBoxObjLabelPosEvent(self):
         #if self.caller.AlexaAppObjects[self.objectIndex].Label.OffsetX == 0 and self.caller.AlexaAppObjects[self.objectIndex].Label.OffsetY == 0 and self.caller.AlexaAppObjects[self.objectIndex].Label.Width == 0 and self.caller.AlexaAppObjects[self.objectIndex].Label.Height == 0 and self.comboBoxObjLabelPos.currentText() == "Custom":
@@ -936,10 +936,10 @@ class AppObjDialog(QWidget):
             self.DialogLabel.show()
         else:
 
-            #Log.Enable = False
-            #Log.DebugImages = False
-            #Log.Level = "error"
-            #Log.Path = ""
+            #Log.Enable = True
+            #Log.DebugImages = True
+            #Log.Level = "debug"
+            #Log.Path = "c:\\IDE-LOG"
 
             Screen.ImageFromIde = self.caller.OriginalScreenshot.copy()
             self.caller.AlexaAppObjects[self.objectIndex].LookupLabelForIde = True
