@@ -96,7 +96,7 @@ namespace ALEXA_IDE
 
         public static bool PythonVersionConfigured()
         {
-            string alexaPathOnUserFolder = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") + @"\.alexa_ide";
+            string alexaPathOnUserFolder = Environment.ExpandEnvironmentVariables("%USERPROFILE%") + @"\.alexa_ide";
 
             if (!Directory.Exists(alexaPathOnUserFolder) || !File.Exists(alexaPathOnUserFolder + "\\settings.ini"))
             {

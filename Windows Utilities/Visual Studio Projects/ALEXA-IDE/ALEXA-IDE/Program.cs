@@ -42,7 +42,7 @@ namespace ALEXA_IDE
             {
 
                 //string path = AlexaIDE.GetIdePath();
-                string alexaSettingFile = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") + @"\.alexa_ide\settings.ini";
+                string alexaSettingFile = Environment.ExpandEnvironmentVariables("%USERPROFILE%") + @"\.alexa_ide\settings.ini";
                 string[] lines = File.ReadAllLines(alexaSettingFile);
                 string pythonpath = "";
 

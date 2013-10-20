@@ -38,6 +38,7 @@ import locale
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import threading
+
 #import math
 
 if sys.platform == 'win32':
@@ -504,7 +505,8 @@ class Window:
 					
 					win32gui.EnumWindows(enum_callback, toplist)
 
-					window = [(hwnd, curTitle) for hwnd, curTitle in winlist if re.match(".*" + title + ".*", curTitle, re.DOTALL | re.IGNORECASE) != None and win32gui.IsWindowVisible(hwnd) != 0]
+					#window = [(hwnd, curTitle) for hwnd, curTitle in winlist if re.match(".*" + title + ".*", curTitle, re.DOTALL | re.IGNORECASE) != None and win32gui.IsWindowVisible(hwnd) != 0]
+					window = [(hwnd, curTitle) for hwnd, curTitle in winlist if re.match(title, curTitle, re.DOTALL | re.IGNORECASE) != None and win32gui.IsWindowVisible(hwnd) != 0]
 					
 					# just grab the hwnd for first window matching title
 					if len(window) > 0:
@@ -2198,7 +2200,7 @@ class Keyboard:
 			if sys.platform == 'win32':
 				shell = win32com.client.Dispatch('WScript.Shell')
 				
-				shell.SendKeys(myStr.encode(locale.getpreferredencoding()))
+				shell.SendKeys(myStr.encode(locale.getpreferredencoding()),True)
 			else:
 				pass
 		except Exception, err:
